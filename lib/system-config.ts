@@ -1,6 +1,6 @@
 export const PI_NETWORK_CONFIG = {
   SDK_URL: "https://sdk.minepi.com/pi-sdk.js",
-  SANDBOX: false,
+  SANDBOX: true,
 } as const;
 
 export const BACKEND_CONFIG = {
@@ -14,11 +14,11 @@ export const BACKEND_URLS = {
   GET_PRODUCTS: (appId: string) =>
     `/api/products/${appId}`,
   GET_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}`,
+    `/api/payments/${paymentId}`,
   APPROVE_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}/approve`,
+    `/api/payments/${paymentId}/approve`,
   COMPLETE_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}/complete`,
+    `/api/payments/${paymentId}/complete`,
 } as const;
 
 export const PI_PLATFORM_URLS = {} as const;
