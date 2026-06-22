@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const PI_API_BASE = "https://api.testnet.minepi.com";
+const PI_API_BASE = "https://api.minepi.com";
 const EXPECTED_AMOUNT = 5;
 
 export async function POST(
