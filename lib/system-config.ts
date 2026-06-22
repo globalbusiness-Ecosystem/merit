@@ -12,7 +12,7 @@ export const BACKEND_URLS = {
   LOGIN: `/api/login`,
   LOGIN_PREVIEW: `${BACKEND_CONFIG.BASE_URL}/v1/login/preview`,
   GET_PRODUCTS: (appId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/v1/apps/${appId}/products`,
+    `/api/products/${appId}`,
   GET_PAYMENT: (paymentId: string) =>
     `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}`,
   APPROVE_PAYMENT: (paymentId: string) =>
